@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct HomeButtonView: View {
-    //    declaramos una variable
         var imageName = ""
         
         var body: some View {
             VStack {
-    //            La idea es crear un componente que reciba el nombre una imagen y en base a eso pueda crear un boton
                 Button {
                     print("Like")
                 } label: {
@@ -28,6 +26,6 @@ struct HomeButtonView: View {
 
 struct HomeButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeButtonView()
+        HomeButtonView(imageName: "dislike-button")
     }
 }
